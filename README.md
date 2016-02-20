@@ -17,3 +17,10 @@ Here's a list of my favorite Ferraris:
 And a photo of a Ferrari 166 Inter:
 
 ![Ferrari 166](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1RiJJ78LKcW9DHYafV2AOAqqFZXBhimJhQIWA3LDZ7VxqVec1)
+
+and here's a code snippet:
+
+```
+var hardConcept = function(){
+    console.log("help me with this!")
+  }```
