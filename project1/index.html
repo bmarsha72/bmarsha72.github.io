@@ -4,19 +4,33 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
 
-    <title>The Trump Speech Writer</title>
+    <title>Trump Libs</title>
 </head>
 
 <body>
   <h1>Welcome To The Trump Speech Writer!</h1>
 
+      <label class="nounlabel">Select A Noun</label>
+          <select name="test1">
+              <option value="test1">--- Please select ---</option>
+              <option value="audio/china.mp3">China</option>
+              <option value="audio/golf.mp3">Golf</option>
+              <option value="audio/Islamic Terrorism.mp3">Islamic Terrorism</option>
+          </select><br/>
+
     <div>
-      <form id="myForm">
-        <select id="selectNumber">
-          <option value="">Choose a noun</option>
-        </select>
-      </form>
+      <button>press to hear the speech</button>
     </div>
+
+      <div id="compiled">
+        <audio controls><source type="audio/mp3" id="noun1" src="audio/IslamicTerrorism.mp3"></audio>
+        <audio controls><source type="audio/mp3" id="noun2" src="audio/IslamicTerrorism.mp3"></audio>
+        <audio controls><source type="audio/mp3" id="noun3" src="audio/IslamicTerrorism.mp3"></audio>
+        <audio controls><source type="audio/mp3" id="noun4" src="audio/IslamicTerrorism.mp3"></audio>
+        <audio controls><source type="audio/mp3" id="noun5" src="audio/IslamicTerrorism.mp3"></audio>
+      </div>
+
+
 
 
 
