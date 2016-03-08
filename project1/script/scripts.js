@@ -20,11 +20,41 @@ $(document).ready(function(){
 //  $('#nounSelector').append('<option value="'+mp3[2]+'" >Islamic Terrorism</option>')
 //  $('#nounSelector').append('<option value="'+mp3[3]+'" >The Middle East</option>')
 
- $( '.test1' ).change(function() {
+
+function createPlayer(url, next) {
+  var audio = document.createElement('audio');
+  audio.src = 'audio/IslamicTerrorism.mp3'
+  audio.addEventListener('ended', function() {
+    // when the song stops
+    console.log('test');
+    var secondAudio = document.createElement('audio');
+    secondAudio.src = 'audio/golf.mp3';
+    secondAudio.addEventListener('ended', function() {
+      // when the song stops
+      console.log('test2');
+      var thirdAudio = document.createElement('audio');
+      thirdAudio.src = 'audio/the_middle_east.mp3';
+      thirdAudio.play();
+
+      // create new audio + add src
+      // + play();
+    });
+    secondAudio.play();
+    // create new audio + add src
+    // + play();
+  });
+  audio.play();
+}
+createPlayer();
+
+
+
+
+ $('.test1').change(function() {
+   console.log('this function is happening')
       $('#noun1').prop("src", jimRules())
     });
 }); // end of doc readdy
-
 
 function jimRules(){
   var optionValue = $('option:selected').val();
