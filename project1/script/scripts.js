@@ -1,19 +1,21 @@
 $(document).ready(function(){
   // things to do when the page has fully loaded
 
-function createPlayer() {
+//--> This function should take one argument
+//---> Replace the audio sources with the correct ones from the array
+function createPlayer(clipPath) {
   var audio = document.createElement('audio');
-  audio.src = 'audio/adjectives/Slob.mp3'
+  audio.src = clipPath[0];
   audio.addEventListener('ended', function() {
     // when the song stops
     console.log('test');
     var secondAudio = document.createElement('audio');
-    secondAudio.src = 'audio/people/Rosie.mp3';
+    secondAudio.src = clipPath[1];
     secondAudio.addEventListener('ended', function() {
       // when the song stops
       console.log('test2');
       var thirdAudio = document.createElement('audio');
-      thirdAudio.src = 'audio/secondnouns/IslamicTerrorism.mp3';
+      thirdAudio.src = clipPath[2];
       thirdAudio.play();
 
       // create new audio + add src
@@ -25,22 +27,45 @@ function createPlayer() {
   });
   audio.play();
 }
-createPlayer();
+
+
+function checkLength(arr) {
+  return (arr.length === 3) ? createPlayer(arr) : false;
+}
+// createPlayer();
 
 
 
   var clipsSelected = [];
   // Noun
-  $('.test1').change(function() {
-    console.log('this function is happening');
-    noun1Selected.push($(this, ':selected').val());
-    console.log(noun1Selected, '<--- You should see an array here');
+  $('#noun1').change(function() {
+    console.log('the noun1 function is happening');
+    clipsSelected.push($(this, ':selected').val());
+
+
+  });
+
+  //Second Noun Listener:
+  $('#noun2').change(function() {
+    console.log('the noun2 function is happening');
+    clipsSelected.push($(this, ':selected').val());
 
 
   });
 
   // Adjective listener
-  $('.adjective').change(function() {
-    //
-  })
+  $('#adjective1').change(function() {
+    console.log('the adjective1 function is happening');
+    clipsSelected.push($(this, ':selected').val());
+
+
+  });
+
+  $('#startshow').click(function() {
+    checkLength(clipsSelected);
+  });
+
+
+
+
 }); // end of doc readdy
