@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // things to do when the page has fully loaded
 
-  var mp3 = ['audio/golf.mp3','audio/china.mp3','audio/IslamicTerrorism.mp3','audio/the_middle_east.mp3']
+  //var mp3 = ['audio/golf.mp3','audio/china.mp3','audio/IslamicTerrorism.mp3','audio/the_middle_east.mp3']
 
   //var select = document.getElementById("selectNumber");
 
@@ -23,17 +23,17 @@ $(document).ready(function(){
 
 function createPlayer(url, next) {
   var audio = document.createElement('audio');
-  audio.src = 'audio/IslamicTerrorism.mp3'
+  audio.src = 'audio/adjectives/Disgusting.mp3'
   audio.addEventListener('ended', function() {
     // when the song stops
     console.log('test');
     var secondAudio = document.createElement('audio');
-    secondAudio.src = 'audio/golf.mp3';
+    secondAudio.src = 'audio/people/Rosie.mp3';
     secondAudio.addEventListener('ended', function() {
       // when the song stops
       console.log('test2');
       var thirdAudio = document.createElement('audio');
-      thirdAudio.src = 'audio/the_middle_east.mp3';
+      thirdAudio.src = 'audio/secondnouns/the_middle_east.mp3';
       thirdAudio.play();
 
       // create new audio + add src
