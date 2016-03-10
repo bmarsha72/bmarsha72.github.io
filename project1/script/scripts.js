@@ -2,28 +2,6 @@
 $(document).ready(function(){
   // things to do when the page has fully loaded
 
-//--> This function should take one argument
-//---> Replace the audio sources with the correct ones from the array
-
-
-// function checkLength(obj) {
-//   // create a counter variable here
-//   var counter = 0
-//   for (var prop in obj) {
-    // add 1 to counter each time around
-
-
-  // if (counter === 3){
-  //   return createPlayer();
-  // }
-
-// }
-//createPlayer();
-
-
-
-
-
   // Noun
   $('#noun1').change(function() {
     console.log('the noun1 function is happening');
@@ -44,7 +22,10 @@ $(document).ready(function(){
     clipsSelected.phrase1 = $(this, ':selected').val()
   });
 
+  var trumpImages = ['http://www.slate.com/content/dam/slate/blogs/moneybox/2015/08/16/donald_trump_on_immigration_build_border_fence_make_mexico_pay_for_it/483208412-real-estate-tycoon-donald-trump-flashes-the-thumbs-up.jpg.CROP.promo-xlarge2.jpg','https://upload.wikimedia.org/wikipedia/commons/e/ee/Donald_Trump_by_Gage_Skidmore.jpg','http://static.digg.com/images/477b049c31844063bc14ba6878964bdd_97e130b6dc4f4eb0901182aa58d59ea0_1_post.jpeg','http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/i/2015/01/02/Donald-Trump_612x380.jpg?itok=eSYTrOud'];
   $('#startshow').click(function() {
+    $('#trump-img').attr('src', trumpImages[Math.floor(Math.random() * trumpImages.length - 1)]);
+    console.log(trumpImages[Math.floor(Math.random() * trumpImages.length - 1)], '<---- trump image');
     checkLength(clipsSelected);
   });
 
@@ -60,6 +41,9 @@ function checkLength(obj){
     if(counter === 3){
       console.log(counter)
       createPlayer(clipsSelected)
+    }
+    else{
+      //create span message with jQuery saying please make all selections
     }
     console.log("obj: " + prop + " = " + obj[prop])
   }
