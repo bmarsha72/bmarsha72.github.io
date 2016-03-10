@@ -1,0 +1,31 @@
+<h1>HELL TOUPEE
+
+  <i>Stakeholder - Brian Marshall
+
+<h2>Welcome to Hell Toupée, the Trump Lib
+game.
+
+The object is to select speech components from the pull-down
+lists provided, then press the button to hear the mad-lib of
+Donald Trump speaking the mad lib.
+
+
+This is an audio API using callback functions
+to play sequential MP3 audio snippets of
+Donald Trump that exist in the public domain.
+
+Technologies used:
+
++html
++jQuery
++Javascript
++ClipGrab
++WavePad
+
+The biggest difficulty encountered was finding
+a way to play the selected MP3's in the correct
+order, independent of order selected,
+and triggering the final audio event to play
+uninterrupted.
+
+No animals were harmed in the construction of this API.
