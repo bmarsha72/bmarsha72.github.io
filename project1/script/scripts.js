@@ -34,6 +34,9 @@ $(document).ready(function(){
 
 }); // end of doc readdy
 
+
+//This is the function that checks to make sure that
+//there are the correct number of selections if done out of order.
 function checkLength(obj){
   var counter = 0
   for (var prop in obj){
@@ -43,7 +46,7 @@ function checkLength(obj){
       createPlayer(clipsSelected)
     }
     else{
-      //create span message with jQuery saying please make all selections
+      console.log("please make all selections")
     }
     console.log("obj: " + prop + " = " + obj[prop])
   }
