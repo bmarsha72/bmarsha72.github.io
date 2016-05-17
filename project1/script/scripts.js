@@ -63,7 +63,7 @@ audio1.addEventListener('ended', function() {
   audio.addEventListener('ended', function() {
 
     var secondLibAudio = document.createElement('audio');
-    secondLibAudio.src = 'audio/snippet2lib1/Snippet2Lib1.mp3';
+    secondLibAudio.src = 'project1/audio/audiocopies/IwentToTheWhartonSchoolOfFinance.mp3';
     secondLibAudio.addEventListener('ended',function() {
 
       var secondAudio = document.createElement('audio');
@@ -71,7 +71,7 @@ audio1.addEventListener('ended', function() {
       secondAudio.addEventListener('ended', function() {
 
         var thirdLibAudio = document.createElement('audio');
-        thirdLibAudio.src = 'audio/snippet3lib1/snippet3lib1.mp3';
+        thirdLibAudio.src = 'project1/audio/audiocopies/IwentToTheWhartonSchoolOfFinance.mp3';
         thirdLibAudio.addEventListener('ended',function() {
 
           var thirdAudio = document.createElement('audio');
