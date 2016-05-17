@@ -71,7 +71,7 @@ audio1.addEventListener('ended', function() {
       secondAudio.addEventListener('ended', function() {
 
         var thirdLibAudio = document.createElement('audio');
-        thirdLibAudio.src = 'project1/audio/audiocopies/itstoolongwhowantstowatchfiftyhoursofthisstuffright.mp3'+'project1/audio/audiocopies/HitMeHardWithTheWomenCardThatsEnough.mp3';
+        thirdLibAudio.src = 'audio/audiocopies/itstoolongwhowantstowatchfiftyhoursofthisstuffright.mp3'+'audio/audiocopies/HitMeHardWithTheWomenCardThatsEnough.mp3';
         thirdLibAudio.addEventListener('ended',function() {
 
           var thirdAudio = document.createElement('audio');
