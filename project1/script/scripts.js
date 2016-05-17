@@ -55,7 +55,7 @@ function checkLength(obj){
 function createPlayer(clipPath) {
 
 var audio1 = document.createElement('audio');
-audio1.src = 'audio/snippet1lib1/Snippet1Lib1.mp3';
+audio1.src = 'audio/audiocopies/HitMeHardWithTheWomenCardThatsEnough.mp3';
 audio1.addEventListener('ended', function() {
 
   var audio = document.createElement('audio');
